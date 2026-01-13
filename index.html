@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aesthetic Interactive Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h3>✨ Aesthetic UI</h3>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+</nav>
+
+<section class="hero">
+    <h1>Beautiful <span>Interactive</span> Website</h1>
+    <p>HTML • CSS • JavaScript</p>
+    <button class="btn" onclick="openModal()">Open Modal</button>
+</section>
+
+<section class="cards">
+    <div class="card">Hover Card ✨</div>
+    <div class="card">Animated UI 🎨</div>
+    <div class="card">Responsive Design 📱</div>
+</section>
+
+<!-- ACCORDION -->
+<div class="accordion">
+    <div class="acc-item" onclick="toggleAcc(this)">
+        Click to expand 🔽
+        <p>Accordion content goes here.</p>
+    </div>
+</div>
+
+<!-- FORM -->
+<form onsubmit="validateForm(event)">
+    <h3>Contact Form</h3>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <button class="btn">Submit</button>
+</form>
+
+<br>
+
+<!-- PROGRESS -->
+<div class="progress">
+    <div class="progress-bar" id="bar"></div>
+</div>
+<center>
+    <button class="btn" onclick="loadProgress()">Load</button>
+</center>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <h3>Modal Popup</h3>
+        <p>This is an interactive modal.</p>
+        <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">Form Submitted Successfully ✅</div>
+
+<!-- JS Link -->
+<script src="script.js"></script>
+</body>
+</html>
